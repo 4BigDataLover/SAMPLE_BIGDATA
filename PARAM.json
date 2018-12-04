@@ -1,0 +1,34 @@
+FLUX: 'EDF_PROJET_BIGDATA_TEST'
+knox_login: 'dsp_ext_mmd-sup'
+INSTALL_HDFS: '/user/dsp_ext_mmd-sup/eadm-devops/EDF_PROJET_BIGDATA_TEST/'
+
+INSTALL_COMMON: '/user/dsp_ext_mmd-sup/COMMON/EDF_PROJET_BIGDATA_TEST/'
+INSTALL_USER: 'dco_app_simm'
+INSTALL_PREFIX: 'PROJET_TEST'
+INSTALL_CONTACT: 'lamine-externe.aboubacar@edf.fr'
+INSTALL_NAME: 'dco_app_simm'
+
+
+BUILD_CLONE: 'NO'
+BUILD_TEMPLATE: 'NO'
+BUILD_HDFSDIR: 'NO'
+BUILD_OOZIECHECKFILE: 'NO'
+BUILD_HIVECREATE: 'NO'
+BUILD_NEXUS: 'YES'
+BUILD_DEPLOY: 'YES'
+
+directories:
+- config
+- data
+- lib
+- oozie
+- elastic
+- hbase
+- hive
+- nifi
+- oracle
+- phoenix
+- scripts
+- spark
+- xslt
+

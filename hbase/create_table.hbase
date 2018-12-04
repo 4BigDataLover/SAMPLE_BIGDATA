@@ -1,0 +1,1 @@
+create 'dtg_ref:bison_data', {NAME=>'C', REPLICATION_SCOPE => '1'}

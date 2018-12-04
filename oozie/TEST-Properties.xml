@@ -1,0 +1,90 @@
+<configuration>
+<property>
+  <name>user.name</name>
+  <value>dsp_ext_mmd-sup</value>
+</property>
+<property>
+  <name>oozie.coord.application.path</name>
+  <value>hdfs:${appRoot}/oozie/TEST-Coordinator.xml</value>
+</property>
+<property>
+  <name>nameNode</name>
+  <value>hdfs://datalab</value>
+</property>
+<property>
+  <name>queueName</name>
+  <value>dco_batch</value>
+</property>
+<property>
+  <name>appRoot</name>
+  <value>/user/dsp_ext_mmd-sup/eadm-devops/EDF_PROJET_BIGDATA_TEST/</value>
+</property>
+<property>
+  <name>commonRoot</name>
+  <value>/user/dsp_ext_mmd-sup/COMMON/EDF_PROJET_BIGDATA_TEST/</value>
+</property>
+<property>
+  <name>userName</name>
+  <value>dco_app_simm</value>
+</property>
+<property>
+  <name>userPrincipal</name>
+  <value>${userName}@DATALAB.EDF.FR</value>
+</property>
+<property>
+  <name>hivePrincipal</name>
+  <value>hive/_HOST@DATALAB.EDF.FR</value>
+</property>
+<property>
+  <name>mailSubjectEnv</name>
+  <value>Chaine PROJET_TEST/dco_app_simm Datalab</value>
+</property>
+<property>
+  <name>mailDefault</name>
+  <value>lamine-externe.aboubacar@edf.fr</value>
+</property>
+<property>
+  <name>hive2url</name>
+  <value>jdbc:hive2://noeyy0zl.noe.edf.fr:2181,noeyyet7.noe.edf.fr:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;ssl=true;transportMode=http;httpPath=cliservice</value>
+</property>
+<property>
+  <name>jobTracker</name>
+  <value>autodetect.HA</value>
+</property>
+<property>
+  <name>userKeytab</name>
+  <value>${userName}.keytab</value>
+</property>
+<property>
+  <name>oozie.use.system.libpath</name>
+  <value>true</value>
+</property>
+<property>
+  <name>mailErrorTo</name>
+  <value>lamine-externe.aboubacar@edf.fr</value>
+</property>
+<property>
+  <name>hdfsloggerVersion</name>
+  <value>2.6.0</value>
+</property>
+<property>
+  <name>archiverVersion</name>
+  <value>0.2.10</value>
+</property>
+<property>
+  <name>oozie.wf.validate.ForkJoin</name>
+  <value>false</value>
+</property>
+<property>
+  <name>regex_anneemois</name>
+  <value>^EDF_DCO_DMP_LVRP_(2[0-9][0-9][0-9])[\d]{4}_[0-9]{6}_[0-9]{5}.tar.gz$</value>
+</property>
+<property>
+  <name>input_directory</name>
+  <value>/user/dacc/staging/publication/verone/LIVERAMP/</value>
+</property>
+<property>
+  <name>archive_directory</name>
+  <value>/user/dacc/archive/publication/verone/LIVERAMP/</value>
+</property>
+</configuration>

@@ -1,0 +1,55 @@
+<workflow-app name="testdevops/LIVERAMP" xmlns="uri:oozie:workflow:0.4">
+<credentials>
+    <credential name="hive2_creds" type="hive2">
+      <property>
+        <name>hive2.server.principal</name>
+        <value>${hivePrincipal}</value>
+      </property>
+      <property>
+        <name>hive2.jdbc.url</name>
+        <value>${SITE_HIVEURL}</value>
+     </property>
+    </credential>
+</credentials>
+<start to='archivage'/>
+
+<action name="archivage">
+   <java>
+        <job-tracker>${jobTracker}</job-tracker>
+        <name-node>${nameNode}</name-node>
+        <configuration>
+            <property>
+                <name>oozie.launcher.mapred.job.queue.name</name>
+                <value>${queueName}</value>
+            </property>
+        </configuration>
+        <main-class>fr.edf.dco.common.archiver.Main</main-class>
+        <arg>--filter</arg>
+        <arg>EDF_DCO_DMP_LVRP.*</arg>
+        <arg>${regex_anneemois}</arg>
+        <arg>${input_directory}</arg>
+        <arg>${archive_directory}</arg>
+        <file>${commonRoot}/conf/hdfs-site.xml</file>
+        <file>${commonRoot}/conf/core-site.xml</file>
+        <file>${appRoot}/config/HDFSLogger.properties</file>
+        <file>${commonRoot}/lib/hdfs/HDFSLogger-${hdfsloggerVersion}.jar</file>
+        <file>${commonRoot}/lib/common/archiver-${archiverVersion}.jar</file>
+      <capture-output/>
+   </java>
+      <ok to="end"/>
+      <error to="kill"/>
+</action>
+    
+
+	
+	
+<!-- fin du workflow -->
+	
+	
+	<kill name='kill'>
+		<message>Erreur lors de l'execution du workflow.</message>
+	</kill>
+	<end name='end'/>
+</workflow-app>
+    
+    

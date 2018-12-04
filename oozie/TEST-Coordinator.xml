@@ -1,0 +1,13 @@
+<coordinator-app name="testdevops/LIVERAMPScheduler" frequency="${coord:days(1)}" start="2018-12-03T17:21Z" end="2020-01-01T00:00Z" timezone="Europe/Paris" xmlns="uri:oozie:coordinator:0.4">             		  		         
+	<controls>        
+		<timeout>-1</timeout>        
+		<concurrency>1</concurrency>        
+		<execution>LAST_ONLY</execution>        
+		<throttle>1</throttle>    
+	</controls>    
+	<action>		
+		<workflow>			
+			<app-path>${appRoot}/oozie/TEST-Workflow.xml</app-path>		
+		</workflow>	
+	</action>
+</coordinator-app>
