@@ -1,12 +1,12 @@
-FLUX: 'EDF_PROJET_BIGDATA_TEST'
+FLUX: 'XXX_PROJET_BIGDATA_TEST'
 knox_login: 'dsp_ext_mmd-sup'
-INSTALL_HDFS: '/user/dsp_ext_mmd-sup/eadm-devops/EDF_PROJET_BIGDATA_TEST/'
+INSTALL_HDFS: '/user/dsp_ext_mmd-sup/eadm-devops/XXX_PROJET_BIGDATA_TEST/'
 
-INSTALL_COMMON: '/user/dsp_ext_mmd-sup/COMMON/EDF_PROJET_BIGDATA_TEST/'
-INSTALL_USER: 'dco_app_simm'
+INSTALL_COMMON: '/user/dsp_ext_mmd-sup/COMMON/XXX_PROJET_BIGDATA_TEST/'
+INSTALL_USER: 'bigDataLover'
 INSTALL_PREFIX: 'PROJET_TEST'
-INSTALL_CONTACT: 'lamine-externe.aboubacar@edf.fr'
-INSTALL_NAME: 'dco_app_simm'
+INSTALL_CONTACT: 'lamine-externe.aboubacar@XXX.fr'
+INSTALL_NAME: 'bigDataLover'
 
 
 BUILD_CLONE: 'NO'
