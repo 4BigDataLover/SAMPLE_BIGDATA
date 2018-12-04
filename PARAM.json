@@ -1,8 +1,8 @@
 FLUX: 'XXX_PROJET_BIGDATA_TEST'
-knox_login: 'dsp_ext_mmd-sup'
-INSTALL_HDFS: '/user/dsp_ext_mmd-sup/eadm-devops/XXX_PROJET_BIGDATA_TEST/'
+knox_login: 'dsp_xxx_xxx-xxx'
+INSTALL_HDFS: '/user/dsp_xxx_xxx-xxx/eadm-devops/XXX_PROJET_BIGDATA_TEST/'
 
-INSTALL_COMMON: '/user/dsp_ext_mmd-sup/COMMON/XXX_PROJET_BIGDATA_TEST/'
+INSTALL_COMMON: '/user/dsp_xxx_xxx-xxx/COMMON/XXX_PROJET_BIGDATA_TEST/'
 INSTALL_USER: 'bigDataLover'
 INSTALL_PREFIX: 'PROJET_TEST'
 INSTALL_CONTACT: 'lamine-externe.aboubacar@XXX.fr'
