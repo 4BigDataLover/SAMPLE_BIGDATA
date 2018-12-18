@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS employee ( eid int, name String,salary String, destination String);

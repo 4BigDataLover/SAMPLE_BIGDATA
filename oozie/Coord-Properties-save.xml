@@ -1,0 +1,38 @@
+<configuration>
+  <property>
+    <name>user.name</name>
+    <value>root</value>
+  </property>
+  <property>
+    <name>jobTracker</name>
+    <value>sandbox.hortonworks.com:8088</value>
+    <!--  Example: <value>localhost:50300</value>  -->
+  </property>
+  <property>
+    <name>nameNode</name>
+    <value>hdfs://sandox.hortonworks.com:8020</value>
+    <!--  Example: <value>hdfs://localhost:8020</value>  -->
+  </property>
+  <property>
+
+
+    <property>
+      <name>queueName</name>
+      <value>default</value>
+    </property>
+
+    <property>
+      <name>examplesRoot</name>
+      <value>examples</value>
+    </property>
+
+
+    <name>oozie.coord.application.path</name>
+    <value>hdfs://sandbox.hortonworks.com:8020/user/oozie/examples/apps/no-op/coordinator.xml</value>
+
+    <!--
+    Example: <value>hdfs://localhost:8020/tmp/test</value>
+   -->
+  </property>
+
+</configuration>
